@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Ohnera — Health Intelligence. Redefined.</title>
+<meta name="description" content="Ohnera reads breath, saliva, and blood through a single handheld device, delivering real-time health intelligence with zero friction. One device. Three sample types. Results in seconds.">
+<meta name="keywords" content="health intelligence, breath analysis, metabolic health, wellness device, VOC detection, Ohnera, real-time health, Umanah Systems Group">
+<meta name="author" content="Ohnera — A Umanah Systems Group Program">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F7F3EE">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ohnera.com/">
+<meta property="og:title" content="Ohnera — Health Intelligence. Redefined.">
+<meta property="og:description" content="Breath. Saliva. Blood. One device. Real-time results. Zero friction. Nothing like it exists.">
+<meta property="og:image" content="https://ohnera.com/og-image.png">
+<meta property="og:image:url" content="https://ohnera.com/og-image.png">
+<meta property="og:image:secure_url" content="https://ohnera.com/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Ohnera health intelligence platform">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Ohnera">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ohnera — Health Intelligence. Redefined.">
+<meta name="twitter:description" content="Breath. Saliva. Blood. One device. Real-time results. Zero friction.">
+<meta name="twitter:image" content="https://ohnera.com/og-image.png">
+<link rel="canonical" href="https://ohnera.com/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23F7F3EE'/><text y='.9em' font-size='80' fill='%231A6B52'>O</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white:   #F7F3EE;
+  --surface: #EDE8E2;
+  --card:    #E6DFD7;
+  --rule:    #D0C8BE;
+  --muted:   #A89D92;
+  --body:    #5C524A;
+  --dark:    #1E1812;
+  --accent:  #1A6B52;
+  --accent2: #134F3D;
+  --cta:     #E8724A;
+  --cta2:    #C45A35;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--white);color:var(--dark);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;text-align:center;}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
+.grid-lines{position:fixed;inset:0;background-image:linear-gradient(rgba(26,107,82,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(26,107,82,0.04) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;z-index:0;}
+.accent-bar{height:3px;background:linear-gradient(90deg,transparent,var(--accent),transparent);position:relative;z-index:1;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(32px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes accentPulse{0%,100%{text-shadow:0 0 0 transparent;}50%{text-shadow:0 0 40px rgba(26,107,82,0.18);}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(247,243,238,0.93);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--rule);animation:slideDown 0.6s ease both;}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:0.1em;color:var(--dark);text-decoration:none;transition:color 0.2s;}
+.nav-logo span{color:var(--accent);}
+.nav-logo:hover{color:var(--accent);}
+.nav-links{display:flex;gap:36px;list-style:none;}
+.nav-links a{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--body);text-decoration:none;transition:color 0.2s;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;background:var(--accent);transition:width 0.3s ease;}
+.nav-links a:hover{color:var(--accent);}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#fff;background:var(--cta);padding:10px 22px;text-decoration:none;font-weight:500;transition:background 0.2s,transform 0.15s;}
+.nav-cta:hover{background:var(--cta2);transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.hamburger span{display:block;width:24px;height:2px;background:var(--dark);transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(247,243,238,0.98);border-bottom:1px solid var(--rule);padding:24px;z-index:499;flex-direction:column;align-items:center;gap:20px;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-family:'DM Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:var(--body);text-decoration:none;transition:color 0.2s;}
+.mobile-menu a:hover{color:var(--accent);}
+.mobile-menu .nav-cta{margin-top:8px;color:#fff;}
+
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:140px 24px 80px;overflow:hidden;}
+#hero::before{content:'';position:absolute;top:20%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(26,107,82,0.06) 0%,transparent 70%);pointer-events:none;}
+.hero-bg-text{position:absolute;bottom:-60px;left:50%;transform:translateX(-50%);font-family:'Bebas Neue',sans-serif;font-size:clamp(120px,22vw,320px);color:rgba(26,107,82,0.018);letter-spacing:0.05em;line-height:1;pointer-events:none;user-select:none;white-space:nowrap;}
+.hero-content{position:relative;z-index:1;max-width:900px;width:100%;display:flex;flex-direction:column;align-items:center;}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);margin-bottom:28px;display:flex;align-items:center;justify-content:center;gap:14px;animation:fadeIn 0.8s ease 0.2s both;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:32px;height:1px;background:var(--accent);}
+.hero-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(100px,18vw,200px);line-height:0.88;letter-spacing:0.02em;margin-bottom:32px;color:var(--dark);animation:fadeUp 0.8s ease 0.35s both;}
+.hero-headline .line-accent{color:var(--accent);animation:accentPulse 4s ease-in-out infinite;display:inline-block;}
+.hero-sub{font-size:clamp(16px,2vw,20px);color:var(--body);max-width:600px;line-height:1.75;margin-bottom:48px;font-weight:300;text-align:center;animation:fadeUp 0.8s ease 0.5s both;}
+.hero-sub strong{color:var(--dark);font-weight:500;}
+.hero-actions{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;animation:fadeUp 0.8s ease 0.65s both;}
+
+.btn-primary{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:#fff;background:var(--cta);padding:16px 36px;text-decoration:none;font-weight:500;transition:background 0.2s,transform 0.15s,box-shadow 0.2s;display:inline-block;}
+.btn-primary:hover{background:var(--cta2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,114,74,0.25);}
+.btn-ghost{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:16px 36px;text-decoration:none;transition:background 0.2s,color 0.2s,transform 0.15s;display:inline-block;}
+.btn-ghost:hover{background:var(--accent);color:#fff;transform:translateY(-2px);}
+
+.hero-visual-wrap{width:100%;max-width:900px;margin-top:64px;animation:fadeUp 0.8s ease 0.8s both;}
+.hero-visual{width:100%;aspect-ratio:16/9;background:var(--card);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.hero-visual img{width:100%;height:100%;object-fit:cover;display:block;}
+.img-placeholder{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--muted);}
+.img-placeholder span{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;}
+.hero-stats{display:flex;margin-top:1px;border:1px solid var(--rule);border-top:none;background:var(--rule);width:100%;gap:1px;}
+.hero-stat{flex:1;padding:20px 16px;background:var(--card);display:flex;flex-direction:column;align-items:center;}
+.hero-stat-num{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--accent);line-height:1;}
+.hero-stat-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--body);margin-top:5px;}
+
+/* SECTIONS */
+.section{position:relative;z-index:1;padding:120px 24px;border-top:1px solid var(--rule);}
+.section-inner{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;align-items:center;}
+.section-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:12px;}
+.section-label::before,.section-label::after{content:'';display:block;width:32px;height:1px;background:var(--accent);}
+h2.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5.5vw,76px);letter-spacing:0.02em;line-height:0.92;margin-bottom:24px;text-align:center;color:var(--dark);}
+h2.section-title .acc{color:var(--accent);}
+.section-body{font-size:16px;color:var(--body);max-width:640px;line-height:1.8;margin-bottom:16px;text-align:center;}
+.section-body strong{color:var(--dark);font-weight:500;}
+
+/* HOW IT WORKS */
+#how{background:var(--surface);}
+.how-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);width:100%;margin-top:56px;}
+.how-step{background:var(--card);padding:0;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;overflow:hidden;}
+.how-step-img{width:100%;aspect-ratio:3/4;overflow:hidden;background:var(--rule);display:flex;align-items:center;justify-content:center;}
+.how-step-img img{width:100%;height:100%;object-fit:cover;display:block;}
+.how-step-body{padding:32px 24px;display:flex;flex-direction:column;align-items:center;}
+.how-step-num{font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--accent);opacity:0.25;line-height:1;margin-bottom:12px;}
+.how-step-title{font-size:15px;font-weight:600;color:var(--dark);margin-bottom:10px;letter-spacing:0.02em;}
+.how-step-desc{font-size:13px;color:var(--body);line-height:1.7;}
+.how-step::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transition:transform 0.3s ease;}
+.how-step:hover::after{transform:scaleX(1);}
+.how-step:hover{background:var(--white);}
+
+/* ABOUT */
+#about{background:var(--white);}
+.about-pillars{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);width:100%;margin-top:48px;}
+.pillar{background:var(--card);padding:36px 32px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:background 0.2s;position:relative;overflow:hidden;}
+.pillar::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transition:transform 0.3s ease;}
+.pillar:hover{background:var(--white);}
+.pillar:hover::after{transform:scaleX(1);}
+.pillar-icon{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--accent);line-height:1;margin-bottom:14px;opacity:0.6;}
+.pillar-title{font-size:14px;font-weight:600;color:var(--dark);margin-bottom:10px;letter-spacing:0.03em;}
+.pillar-body{font-size:13px;color:var(--body);line-height:1.7;}
+
+/* WHAT OHNERA READS */
+#reads{background:var(--surface);}
+.reads-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);width:100%;margin-top:48px;}
+.read-card{background:var(--card);padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:background 0.25s;position:relative;overflow:hidden;}
+.read-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transition:transform 0.3s ease;}
+.read-card:hover{background:var(--white);}
+.read-card:hover::after{transform:scaleX(1);}
+.read-icon{font-family:'Bebas Neue',sans-serif;font-size:42px;color:var(--accent);opacity:0.3;line-height:1;margin-bottom:12px;transition:opacity 0.25s;}
+.read-card:hover .read-icon{opacity:0.7;}
+.read-title{font-size:14px;font-weight:600;color:var(--dark);margin-bottom:10px;letter-spacing:0.02em;}
+.read-markers{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.08em;color:var(--accent);margin-bottom:10px;line-height:1.6;}
+.read-desc{font-size:12px;color:var(--body);line-height:1.65;}
+
+/* SCIENCE — DARK */
+#science{background:var(--dark);border-top:none;}
+#science .section-label{color:var(--accent);}
+#science .section-label::before,#science .section-label::after{background:var(--accent);}
+#science h2.section-title{color:#F7F3EE;}
+#science h2.section-title .acc{color:var(--accent);}
+#science .section-body{color:rgba(247,243,238,0.65);}
+#science .section-body strong{color:#F7F3EE;}
+.app-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:rgba(247,243,238,0.06);border:1px solid rgba(247,243,238,0.08);margin-top:48px;width:100%;}
+.app-card{background:rgba(247,243,238,0.04);padding:36px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;overflow:hidden;transition:background 0.25s;}
+.app-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transition:transform 0.3s ease;transform-origin:center;}
+.app-card:hover{background:rgba(247,243,238,0.07);}
+.app-card:hover::after{transform:scaleX(1);}
+.app-num{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--accent);opacity:0.3;line-height:1;margin-bottom:12px;transition:opacity 0.25s;}
+.app-card:hover .app-num{opacity:0.7;}
+.app-title{font-size:15px;font-weight:600;color:#F7F3EE;margin-bottom:10px;letter-spacing:0.02em;}
+.app-desc{font-size:13px;color:rgba(247,243,238,0.6);line-height:1.7;}
+
+/* APPLICATIONS */
+#applications{background:var(--surface);}
+.six-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:48px;width:100%;}
+.six-card{background:var(--card);padding:36px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;overflow:hidden;transition:background 0.25s;}
+.six-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transition:transform 0.3s ease;transform-origin:center;}
+.six-card:hover{background:var(--white);}
+.six-card:hover::after{transform:scaleX(1);}
+.six-num{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--accent);opacity:0.25;line-height:1;margin-bottom:12px;transition:opacity 0.25s;}
+.six-card:hover .six-num{opacity:0.6;}
+.six-title{font-size:15px;font-weight:600;color:var(--dark);margin-bottom:10px;letter-spacing:0.02em;}
+.six-desc{font-size:13px;color:var(--body);line-height:1.7;}
+
+/* LIFESTYLE */
+#lifestyle{background:var(--white);}
+.lifestyle-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);width:100%;margin-top:48px;}
+.lifestyle-img{width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--card);display:flex;align-items:center;justify-content:center;position:relative;}
+.lifestyle-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.5s ease;}
+.lifestyle-img:hover img{transform:scale(1.03);}
+.lifestyle-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(transparent,rgba(30,24,18,0.65));text-align:left;}
+.lifestyle-caption span{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,243,238,0.9);}
+
+/* THE GAP — DARK */
+#problem{background:var(--dark);border-top:none;}
+#problem .section-label{color:var(--accent);}
+#problem .section-label::before,#problem .section-label::after{background:var(--accent);}
+#problem h2.section-title{color:#F7F3EE;}
+#problem h2.section-title .acc{color:var(--accent);}
+#problem .section-body{color:rgba(247,243,238,0.65);}
+.gap-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:rgba(247,243,238,0.06);border:1px solid rgba(247,243,238,0.08);width:100%;margin-top:48px;}
+.gap-card{background:rgba(247,243,238,0.04);padding:36px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:background 0.25s;}
+.gap-card:hover{background:rgba(247,243,238,0.07);}
+.gap-num{font-family:'Bebas Neue',sans-serif;font-size:52px;color:var(--accent);line-height:1;margin-bottom:8px;}
+.gap-unit{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,243,238,0.35);margin-bottom:16px;line-height:1.5;}
+.gap-desc{font-size:13px;color:rgba(247,243,238,0.55);line-height:1.7;}
+.gap-statement{margin-top:48px;padding:40px 44px;border:1px solid rgba(247,243,238,0.1);background:rgba(26,107,82,0.08);max-width:740px;width:100%;position:relative;}
+.gap-statement::before{content:'"';position:absolute;top:-20px;left:30px;font-family:'Bebas Neue',sans-serif;font-size:80px;color:rgba(247,243,238,0.08);line-height:1;}
+.gap-statement p{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,2.5vw,26px);color:#F7F3EE;line-height:1.4;letter-spacing:0.02em;}
+.gap-statement cite{display:block;margin-top:16px;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);font-style:normal;}
+/* DARK SECTION TRANSITIONS */
+#science+#applications{border-top:1px solid var(--rule);}
+.dark-to-light{height:3px;background:linear-gradient(90deg,transparent,var(--accent),transparent);}
+
+/* CONTACT */
+#contact{background:var(--white);}
+.contact-form{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);width:100%;max-width:640px;margin-top:48px;}
+.form-field{background:var(--card);display:flex;flex-direction:column;text-align:left;}
+.form-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);padding:16px 20px 0;}
+.form-field input,.form-field select,.form-field textarea{background:transparent;border:none;outline:none;color:var(--dark);font-family:'DM Sans',sans-serif;font-size:14px;font-weight:300;padding:8px 20px 16px;width:100%;resize:none;-webkit-appearance:none;}
+.form-field select{cursor:pointer;color:var(--dark);}
+.form-field select option{background:var(--card);color:var(--dark);}
+.form-field input::placeholder,.form-field textarea::placeholder{color:var(--muted);}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{background:rgba(26,107,82,0.03);}
+.form-submit{background:var(--card);padding:20px;display:flex;justify-content:center;}
+.form-submit button{width:100%;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#fff;background:var(--cta);border:none;padding:18px 32px;cursor:pointer;font-weight:500;transition:background 0.2s,transform 0.15s,box-shadow 0.2s;}
+.form-submit button:hover{background:var(--cta2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(232,114,74,0.25);}
+
+/* FOOTER */
+footer{position:relative;z-index:1;border-top:1px solid var(--rule);padding:40px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:var(--white);}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.08em;color:var(--dark);}
+.footer-logo span{color:var(--accent);}
+.footer-tagline{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;color:var(--body);text-transform:uppercase;}
+.footer-usg{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;color:var(--accent);text-transform:uppercase;}
+.footer-links{display:flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:var(--body);text-transform:uppercase;}
+.footer-links a{color:var(--body);text-decoration:none;transition:color 0.2s;}
+.footer-links a:hover{color:var(--accent);}
+.footer-copy{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase;}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{padding:16px 20px;justify-content:center;}
+  .nav-links,.nav-cta{display:none;}
+  .hamburger{display:flex;position:absolute;right:20px;top:50%;transform:translateY(-50%);}
+  #hero{padding:110px 20px 60px;}
+  .section{padding:80px 20px;}
+  .hero-stats{flex-direction:column;gap:1px;}
+  .hero-stat{width:100%;}
+  .how-steps{grid-template-columns:1fr;}
+  .about-pillars{grid-template-columns:1fr;}
+  .reads-grid{grid-template-columns:1fr 1fr;}
+  .app-grid{grid-template-columns:1fr;}
+  .six-grid{grid-template-columns:1fr 1fr;}
+  .lifestyle-grid{grid-template-columns:1fr;}
+  .gap-grid{grid-template-columns:1fr;}
+  footer{padding:32px 20px;}
+}
+@media(max-width:480px){
+  .hero-headline{font-size:clamp(80px,20vw,120px);}
+  .hero-actions{flex-direction:column;width:100%;}
+  .btn-primary,.btn-ghost{width:100%;text-align:center;}
+  .reads-grid{grid-template-columns:1fr;}
+  .six-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="grid-lines"></div>
+<div class="accent-bar"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo"><span>O</span>HNERA</a>
+  <ul class="nav-links">
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#science">The Science</a></li>
+    <li><a href="#applications">Applications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Request a Briefing</a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#how" onclick="closeMobile()">How It Works</a>
+  <a href="#science" onclick="closeMobile()">The Science</a>
+  <a href="#applications" onclick="closeMobile()">Applications</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="#contact" class="nav-cta" onclick="closeMobile()">Request a Briefing</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-text">OHNERA</div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Health Intelligence. Redefined.</div>
+    <h1 class="hero-headline"><span class="line-accent">EXHALE</span></h1>
+    <p class="hero-sub">
+      Your body produces thousands of compounds that tell the complete story of your health. Ohnera reads them in real time.<br>
+      <strong>Breath. Saliva. Blood. One device. Results in seconds.</strong>
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Request a Briefing</a>
+      <a href="#how" class="btn-ghost">See How It Works</a>
+    </div>
+    <div class="hero-visual-wrap">
+      <div class="hero-visual">
+        <img src="ohnera-hero.jpg" alt="Ohnera health intelligence platform" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="img-placeholder" style="display:none;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>ohnera-hero.jpg — Person exhaling into device, warm morning light</span>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">3</div>
+          <div class="hero-stat-label">Sample Types</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">64</div>
+          <div class="hero-stat-label">Sensor Array</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">2ppb</div>
+          <div class="hero-stat-label">Parts-Per-Billion Sensitivity. 2,000x more precise than a breathalyzer.</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">Seconds</div>
+          <div class="hero-stat-label">Time to Results</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">How It Works</div>
+    <h2 class="section-title reveal">THREE SECONDS<br><span class="acc">EVERYTHING</span><br>YOU NEED TO KNOW</h2>
+    <p class="section-body reveal">No kit. No appointment. No waiting room. No lab. No 72-hour turnaround. Just you, the device, and the most complete picture of your health available anywhere.</p>
+
+    <div class="how-steps reveal">
+      <div class="how-step">
+        <div class="how-step-img">
+          <img src="ohnera-how-1.jpg" alt="Exhale into Ohnera device" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder" style="display:none;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>ohnera-how-1.jpg</span>
+          </div>
+        </div>
+        <div class="how-step-body">
+          <div class="how-step-num">01</div>
+          <div class="how-step-title">Breathe</div>
+          <p class="how-step-desc">Exhale into the Ohnera device for a few seconds. Optionally provide a small saliva or blood sample through the same device for expanded analysis.</p>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-img">
+          <img src="ohnera-how-2.jpg" alt="Ohnera app shows real-time results" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder" style="display:none;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>ohnera-how-2.jpg</span>
+          </div>
+        </div>
+        <div class="how-step-body">
+          <div class="how-step-num">02</div>
+          <div class="how-step-title">Read</div>
+          <p class="how-step-desc">Results appear in seconds on the Ohnera app. Your metabolic state, recovery, inflammation markers, and health scores are displayed in plain language, not lab jargon.</p>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-img">
+          <img src="ohnera-how-3.jpg" alt="Person acts on Ohnera health intelligence" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder" style="display:none;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>ohnera-how-3.jpg</span>
+          </div>
+        </div>
+        <div class="how-step-body">
+          <div class="how-step-num">03</div>
+          <div class="how-step-title">Act</div>
+          <p class="how-step-desc">The AI layer translates your data into personalized recommendations, nutrition, recovery, movement, and lifestyle. Your health data works for you in real time, every single day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">About Ohnera</div>
+    <h2 class="section-title reveal">THE MOST <span class="acc">COMPLETE</span><br>PICTURE OF YOUR<br>HEALTH. EVER.</h2>
+    <p class="section-body reveal">Most health platforms ask you to do something. Draw blood. Mail a kit. Wait 72 hours. Ohnera asks you to breathe. Our platform analyzes breath, saliva, and blood through a single handheld device, giving partners, athletes, enterprises, and operators a real-time window into human health that has never existed at this level of depth, speed, and simplicity.</p>
+    <div class="about-pillars">
+      <div class="pillar reveal">
+        <div class="pillar-icon">01</div>
+        <div class="pillar-title">Breath Analysis</div>
+        <p class="pillar-body">Thousands of volatile organic compounds captured and identified in seconds. Your metabolic state, inflammation markers, and recovery signals. All from a single exhale. Zero extraction.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon">02</div>
+        <div class="pillar-title">Saliva Analysis</div>
+        <p class="pillar-body">Molecular insight from saliva, captured through the same device with zero additional friction. Broad analyte coverage without a lab, without a clinic, without a wait.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon">03</div>
+        <div class="pillar-title">Blood Analysis</div>
+        <p class="pillar-body">Small sample. Massive insight. Full blood analyte detection and cell counts from a minimally invasive sample. No clinic, no lab, no appointment required.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon">04</div>
+        <div class="pillar-title">AI Intelligence Layer</div>
+        <p class="pillar-body">Every data point feeds a learning system that builds your health baseline over time and surfaces signals before they become problems. Your body talks. Ohnera makes sure you hear it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT OHNERA READS -->
+<section id="reads" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">What Ohnera Reads</div>
+    <h2 class="section-title reveal">YOUR BODY PRODUCES<br><span class="acc">THE DATA. WE READ ALL OF IT.</span></h2>
+    <p class="section-body reveal">Volatile organic compounds in breath are established biomarkers of health, stress, recovery, and disease. Ohnera's 64-sensor array captures them all simultaneously, in seconds, at parts-per-billion precision.</p>
+    <div class="reads-grid reveal">
+      <div class="read-card">
+        <div class="read-icon">01</div>
+        <div class="read-title">Metabolic Health</div>
+        <div class="read-markers">Ketones · Acetone · Isoprene · CO2</div>
+        <p class="read-desc">Real-time fat vs. carb burn state. Metabolic flexibility. Ketone levels without a finger prick. Know your energy substrate before you train, eat, or sleep.</p>
+      </div>
+      <div class="read-card">
+        <div class="read-icon">02</div>
+        <div class="read-title">Recovery and Inflammation</div>
+        <div class="read-markers">Nitric Oxide · Hydrogen · Pentane · Ethane</div>
+        <p class="read-desc">Oxidative stress compounds and inflammatory markers measured in exhaled breath. Know whether your body has recovered before you load it again.</p>
+      </div>
+      <div class="read-card">
+        <div class="read-icon">03</div>
+        <div class="read-title">Gut and Digestive Health</div>
+        <div class="read-markers">Hydrogen · Methane · Short-chain VOCs</div>
+        <p class="read-desc">Hydrogen and methane in breath are established clinical markers of gut microbiome function and SIBO. Ohnera reads them non-invasively in seconds.</p>
+      </div>
+      <div class="read-card">
+        <div class="read-icon">04</div>
+        <div class="read-title">Cardiovascular Markers</div>
+        <div class="read-markers">Trimethylamine · Dimethylsulfide · Ammonia</div>
+        <p class="read-desc">Breath compounds correlated with cardiovascular stress and kidney function. Early signals, delivered early enough to act on.</p>
+      </div>
+      <div class="read-card">
+        <div class="read-icon">05</div>
+        <div class="read-title">Stress and Hormonal Load</div>
+        <div class="read-markers">Cortisol-related VOCs · Steroid metabolites</div>
+        <p class="read-desc">Volatile biomarkers correlated with cortisol load and hormonal disruption. Track your stress response objectively. Not by how you feel, but by what your body is producing.</p>
+      </div>
+      <div class="read-card">
+        <div class="read-icon">06</div>
+        <div class="read-title">Longevity and Cellular Health</div>
+        <div class="read-markers">Alkanes · Aldehydes · Oxidative markers</div>
+        <p class="read-desc">Long-chain alkanes and aldehydes in breath signal oxidative damage and cellular stress. Early markers of aging and inflammation that no consumer device has been able to detect. Until now.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE SCIENCE -->
+<section id="science" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">The Science</div>
+    <h2 class="section-title reveal">SENSOR TECHNOLOGY<br>THE WORLD HAS<br><span class="acc">NEVER SEEN</span><br>IN A CONSUMER DEVICE</h2>
+    <p class="section-body reveal">Three patented technologies, originally engineered for the most demanding environments on earth, now integrated into a single handheld platform. The sensor array detects compounds at <strong>parts-per-billion sensitivity</strong>, a level of precision that has never been available outside of a laboratory. Until now.</p>
+    <div class="app-grid reveal">
+      <div class="app-card">
+        <div class="app-num">01</div>
+        <div class="app-title">64-Sensor Nanomaterial Array</div>
+        <p class="app-desc">Sixty-four chemically distinct nanomaterials, each engineered to detect a specific class of volatile organic compounds. Cross-sensitivity architecture eliminates false positives. Detection at 2 to 5 parts per billion. Response time: seconds.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-num">02</div>
+        <div class="app-title">Differential Mobility Spectrometer</div>
+        <p class="app-desc">Separates volatile and non-volatile molecules in real time for multi-compound identification simultaneously. No processing delay. No lab required. The analytical capability of a full laboratory instrument, compressed into a handheld device.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-num">03</div>
+        <div class="app-title">Centrifugal Microfluidics</div>
+        <p class="app-desc">A miniaturized circular disk that handles saliva and blood analysis with full analyte coverage and blood cell counting. The same device. Expanded insight. No additional hardware, no additional friction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="accent-bar"></div>
+<!-- APPLICATIONS -->
+<section id="applications" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">Where Ohnera Works</div>
+    <h2 class="section-title reveal">ONE DEVICE<br><span class="acc">EVERY</span> ENVIRONMENT<br>EVERY APPLICATION</h2>
+    <p class="section-body reveal">The same sensor stack. The same handheld device. The application layer determines the use case. From the morning routine of a wellness consumer to the performance edge of an elite athlete to the field readiness of a warfighter.</p>
+    <div class="six-grid reveal">
+      <div class="six-card">
+        <div class="six-num">01</div>
+        <div class="six-title">Daily Wellness</div>
+        <p class="six-desc">Your morning health check-in, completed in seconds before your day begins. Metabolic state, recovery score, inflammation level, and AI-powered recommendations. Know your body every day, not once a year at a physical.</p>
+      </div>
+      <div class="six-card">
+        <div class="six-num">02</div>
+        <div class="six-title">Weight and Metabolic Health</div>
+        <p class="six-desc">Real-time fat vs. carbohydrate burn state. Ketone levels. Metabolic flexibility tracked daily without a finger prick or kit. The data your nutritionist wishes you had.</p>
+      </div>
+      <div class="six-card">
+        <div class="six-num">03</div>
+        <div class="six-title">Elite Sports Performance</div>
+        <p class="six-desc">Real-time metabolic state, oxidative stress markers, and recovery readiness for professional athletes. The information advantage every performance staff wants, and none of them have had access to. Until now.</p>
+      </div>
+      <div class="six-card">
+        <div class="six-num">04</div>
+        <div class="six-title">Hormonal and Women's Health</div>
+        <p class="six-desc">Volatile biomarkers correlated with hormonal cycles, cortisol load, and stress response, tracked objectively over time. Health intelligence built for the full complexity of the human body.</p>
+      </div>
+      <div class="six-card">
+        <div class="six-num">05</div>
+        <div class="six-title">Corporate Wellness</div>
+        <p class="six-desc">Deploy health intelligence across an entire workforce. Aggregate anonymized dashboards for benefits teams and HR. Enterprise-scale insight with zero clinical infrastructure, zero friction, and zero downtime.</p>
+      </div>
+      <div class="six-card">
+        <div class="six-num">06</div>
+        <div class="six-title">Longevity and Preventive Health</div>
+        <p class="six-desc">Early metabolic signals of inflammation, oxidative stress, and cellular damage, detected before they become clinical problems. The most powerful preventive health tool ever built for daily consumer use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFESTYLE -->
+<section id="lifestyle" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">Built for Every Body</div>
+    <h2 class="section-title reveal">HEALTH INTELLIGENCE<br>THAT MOVES<br><span class="acc">WITH YOU</span></h2>
+    <p class="section-body reveal">Whether you are an elite athlete, an executive, a parent, or someone who simply wants to know their body better. Ohnera was built for all of you.</p>
+    <div class="lifestyle-grid reveal">
+      <div class="lifestyle-img">
+        <img src="ohnera-lifestyle-1.jpg" alt="Athlete using Ohnera" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="img-placeholder" style="display:none;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>ohnera-lifestyle-1.jpg — Athlete mid-workout, warm light</span>
+        </div>
+        <div class="lifestyle-caption"><span>The Athlete</span></div>
+      </div>
+      <div class="lifestyle-img">
+        <img src="ohnera-lifestyle-2.jpg" alt="Wellness consumer using Ohnera" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="img-placeholder" style="display:none;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>ohnera-lifestyle-2.jpg — Woman, yoga or calm morning</span>
+        </div>
+        <div class="lifestyle-caption"><span>The Wellness Seeker</span></div>
+      </div>
+      <div class="lifestyle-img">
+        <img src="ohnera-lifestyle-3.jpg" alt="Executive using Ohnera" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="img-placeholder" style="display:none;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>ohnera-lifestyle-3.jpg — Executive, professional setting</span>
+        </div>
+        <div class="lifestyle-caption"><span>The Executive</span></div>
+      </div>
+      <div class="lifestyle-img">
+        <img src="ohnera-lifestyle-4.jpg" alt="Outdoor enthusiast using Ohnera" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="img-placeholder" style="display:none;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>ohnera-lifestyle-4.jpg — Person outdoors, hiking or running</span>
+        </div>
+        <div class="lifestyle-caption"><span>The Optimizer</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE GAP -->
+<section id="problem" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">The Gap</div>
+    <h2 class="section-title reveal">THE BODY HAS<br><span class="acc">ALWAYS BEEN</span><br>TALKING. NO ONE<br>BUILT THE DEVICE<br>TO HEAR IT.</h2>
+    <p class="section-body reveal">These are not projections. These are documented figures from the institutions responsible for the mission.</p>
+    <div class="gap-grid reveal">
+      <div class="gap-card">
+        <div class="gap-num">17%</div>
+        <div class="gap-unit">Increase in military health conditions, 2023 vs 2022</div>
+        <p class="gap-desc">Major military health condition categories increased 17% year over year in 2023. Medical encounters rose 18% in the same period. Armed Forces Health Surveillance Division, 2024.</p>
+      </div>
+      <div class="gap-card">
+        <div class="gap-num">+37.9%</div>
+        <div class="gap-unit">Surge in infectious disease among US military, 2020 to 2021</div>
+        <p class="gap-desc">A study of 16.9 million person-years of military health data confirmed a near-40% annual increase in infectious disease. The surveillance gap it exposed did not close when the pandemic ended. BMJ Military Health, 2025.</p>
+      </div>
+      <div class="gap-card">
+        <div class="gap-num">$53B</div>
+        <div class="gap-unit">Global point-of-care diagnostics market, 2024</div>
+        <p class="gap-desc">The global point-of-care diagnostics market reached $53 billion in 2024 and is projected to nearly double by 2033. The consumer wellness slice is the fastest-growing and least served by serious technology. Diagnostics Journal, 2025.</p>
+      </div>
+      <div class="gap-card">
+        <div class="gap-num">72hrs</div>
+        <div class="gap-unit">Average turnaround for current at-home health testing</div>
+        <p class="gap-desc">The current at-home health testing standard requires a kit, a sample, shipping, lab processing, and a 72-hour wait. Ohnera requires one device and a breath. Results in seconds.</p>
+      </div>
+    </div>
+    <div class="gap-statement reveal">
+      <p>Novel solutions that can be deployed far forward are required to effectively prevent wound infections and sepsis.</p>
+      <cite style="color:var(--cta);">— US Army Medical Research and Development Command, 2024</cite>
+    </div>
+  </div>
+</section>
+
+<div class="accent-bar"></div>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="section-inner">
+    <div class="section-label reveal">Contact</div>
+    <h2 class="section-title reveal">THE RIGHT PARTNERS<br>THE <span class="acc">RIGHT MOMENT</span></h2>
+    <p class="section-body reveal">Ohnera is in active partner and investor formation. If you represent a fund, a franchise, a pharma organization, a defense procurement office, or an enterprise wellness operation. This conversation is for you.</p>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-field">
+        <label class="form-label">Full Name</label>
+        <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+      </div>
+      <div class="form-field">
+        <label class="form-label">Email Address</label>
+        <input type="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+      </div>
+      <div class="form-field">
+        <label class="form-label">Organization</label>
+        <input type="text" name="organization" placeholder="Fund, agency, franchise, or company" autocomplete="organization" required>
+      </div>
+      <div class="form-field">
+        <label class="form-label">Inquiry Type</label>
+        <select name="inquiry_type" required>
+          <option value="" disabled selected>Select one</option>
+          <option>Investment Inquiry</option>
+          <option>Pharma Partnership</option>
+          <option>Defense and Government</option>
+          <option>Sports Performance Partnership</option>
+          <option>Corporate Wellness</option>
+          <option>General Inquiry</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label class="form-label">Message</label>
+        <textarea name="message" rows="5" placeholder="Tell us about your interest and how you want to be involved." required></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit" id="submitBtn">Send Message →</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="accent-bar"></div>
+<footer>
+  <div class="footer-logo"><span>O</span>HNERA</div>
+  <div class="footer-tagline">Know your body</div>
+  <div class="footer-usg">An Umanah Systems Group Program</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy Policy</a>
+    <span>·</span>
+    <a href="/terms.html">Terms of Use</a>
+  </div>
+  <div class="footer-copy">© 2026 Ohnera. All rights reserved.</div>
+</footer>
+
+<script>
+/* MOBILE MENU */
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{mobileMenu.classList.toggle('open');});
+function closeMobile(){mobileMenu.classList.remove('open');}
+
+/* SCROLL REVEAL */
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      setTimeout(()=>{e.target.classList.add('visible');},e.target.dataset.delay||0);
+      revealObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach((el,i)=>{
+  el.dataset.delay=(i%4)*80;
+  revealObs.observe(el);
+});
+
+/* CARD STAGGER */
+const cardObs=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const cards=entry.target.querySelectorAll('.app-card,.pillar,.gap-card,.six-card,.how-step,.read-card');
+      cards.forEach((card,i)=>{
+        card.style.opacity='0';
+        card.style.transform='translateY(20px)';
+        card.style.transition=`opacity 0.5s ease ${i*80}ms,transform 0.5s ease ${i*80}ms`;
+        requestAnimationFrame(()=>{
+          setTimeout(()=>{card.style.opacity='1';card.style.transform='translateY(0)';},50);
+        });
+      });
+      cardObs.unobserve(entry.target);
+    }
+  });
+},{threshold:0.05});
+document.querySelectorAll('.app-grid,.about-pillars,.gap-grid,.six-grid,.how-steps,.reads-grid').forEach(el=>{cardObs.observe(el);});
+
+/* FORMSPREE */
+const contactForm=document.getElementById('contactForm');
+const submitBtn=document.getElementById('submitBtn');
+if(contactForm){
+  contactForm.addEventListener('submit',async function(e){
+    e.preventDefault();
+    submitBtn.disabled=true;
+    submitBtn.textContent='Sending...';
+    try{
+      const res=await fetch('https://formspree.io/f/xeelnkqj',{
+        method:'POST',
+        body:new FormData(contactForm),
+        headers:{'Accept':'application/json'}
+      });
+      if(res.ok){window.location.href='/thanks.html';}
+      else{submitBtn.disabled=false;submitBtn.textContent='Send Message →';alert('Something went wrong. Please try again.');}
+    }catch(err){
+      submitBtn.disabled=false;submitBtn.textContent='Send Message →';alert('Network error. Please check your connection and try again.');
+    }
+  });
+}
+
+/* NAV SHRINK */
+window.addEventListener('scroll',()=>{
+  const nav=document.querySelector('nav');
+  if(window.scrollY>60){nav.style.padding='12px 48px';nav.style.background='rgba(247,243,238,0.97)';}
+  else{nav.style.padding='20px 48px';nav.style.background='rgba(247,243,238,0.93)';}
+});
+</script>
+</body>
+</html>
